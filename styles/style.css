@@ -5,8 +5,12 @@
     font-family: "Poppins", sans-serif;
 }
 
-.inter {
+p {
     font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #4E4E4E;
 }
 
 body {
@@ -38,4 +42,83 @@ body {
     width: 48px;
     height: 48px;
     cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #FEEAE9;
+    border-radius: 20px;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.hero-content {
+    flex:1;
+    gap: 8px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 600;
+    color: #FF136F;
+}
+
+.buy-now-btn {
+    background: linear-gradient(180deg, #FF589B 0%, #FF136F 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        /* ছোট স্ক্রিনে ইমেজ উপরে যাবে */
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content p.inter {
+        margin: 0 auto 30px;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
 }
