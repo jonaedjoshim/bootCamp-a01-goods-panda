@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1280px) {
+    body {
+        max-width: 1440px;
+    }
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo {
+    height: 47px;
+    width: 148px;
+    object-fit: contain;
+}
+
+.hamburger {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
